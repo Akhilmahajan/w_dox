@@ -1,0 +1,11 @@
+.welcomeCard {
+  position: absolute;
+  min-width: 250px;
+  min-height: 250px;
+  width: fit-content;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.453);
+  z-index: 1;
+  justify-self: center;
+  align-self: center;
+}

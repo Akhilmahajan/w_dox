@@ -1,0 +1,79 @@
+.heading{
+    /* Project Verification Application */
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    /* identical to box height, or 102% */
+
+    color: #FFFFFF;
+
+    transform: rotate(0.04deg);
+}
+
+
+.continer h3{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    /* or 150% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+}
+
+.continer b{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height, or 100% */
+    
+    color: #FFFFFF;
+    
+}
+.continer p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 31px;
+    margin-bottom: 31px;
+    /* or 194% */
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.continer select{
+    color:red;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px)  {
+    .heading{
+        /* Project Verification Application */
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 34px;
+        padding: 0px 26px;
+        margin-top: 0px;
+        text-align: left;
+        /* identical to box height, or 102% */
+    
+        color: #ffffff !important;
+    
+        transform: rotate(0.04deg); 
+    }
+
+    .continer {
+        background: hsl(0deg 0% 0% / 0%);
+        padding: 0px 30px;
+    }
+}

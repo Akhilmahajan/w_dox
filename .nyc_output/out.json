@@ -1,0 +1,53 @@
+{
+  "D:\\code\\Typescript\\wdox\\components\\InvestmentsCard\\InvestmentsCard.tsx": {
+    "path": "D:\\code\\Typescript\\wdox\\components\\InvestmentsCard\\InvestmentsCard.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 14,
+          "column": 2
+        },
+        "end": {
+          "line": 29,
+          "column": 3
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "InvestmentsCard",
+        "decl": {
+          "start": {
+            "line": 13,
+            "column": 24
+          },
+          "end": {
+            "line": 13,
+            "column": 39
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 13,
+            "column": 78
+          },
+          "end": {
+            "line": 30,
+            "column": 1
+          }
+        },
+        "line": 13
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 2
+    },
+    "f": {
+      "0": 2
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "d03ebb577b4df1badf12ada297098c72ec9b789f"
+  }
+}

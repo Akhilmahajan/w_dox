@@ -1,0 +1,160 @@
+.main {
+  font-family: 'Manrope', sans-serif;
+}
+
+@media screen and (min-width: 481px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sideNote {
+    text-orientation: sideways-right;
+    writing-mode: vertical-lr;
+    width: fit-content;
+    border-right: 2px solid #5f4bd4;
+  }
+
+  .text p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+
+    /* identical to box height, or 160% */
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+  }
+
+  .img {
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .icon {
+    color: #5f4bd4;
+  }
+
+  .process p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 72px;
+
+    /* identical to box height, or 288% */
+    letter-spacing: -0.03em;
+
+    color: #ffffff;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .process {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .int p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+
+    /* identical to box height, or 160% */
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .top {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .text p,
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .sideNote {
+    display: none;
+  }
+
+  .process {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .process p:nth-child(1) {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .int {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 40px;
+  }
+
+  .int p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+
+    /* or 160% */
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+  }
+
+  .icon {
+    color: #5f4bd4;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}

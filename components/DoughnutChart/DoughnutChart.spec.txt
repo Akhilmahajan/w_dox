@@ -1,0 +1,42 @@
+import React from 'react'
+import { mount } from '@cypress/react'
+import DoughnutChart from './DoughnutChart'
+import { IDoughnutData } from './DoughnutChart'
+
+const data: Array<IDoughnutData> = [
+  {
+    quantity: 1,
+    percentage: 60,
+    name: 'Community Liquidity Providers = 1,200,000,000 (40%)',
+    id: 1,
+  },
+  {
+    quantity: 2,
+    percentage: 10,
+    name: 'Pre-Sale Liquidity Providers = 750,000,000 (25%)',
+    id: 2,
+  },
+  {
+    quantity: 2,
+    percentage: 10,
+    name: 'Core Team = 750,000,000 (25%)',
+    id: 2,
+  },
+  {
+    quantity: 3,
+    percentage: 20,
+    name: 'Reserve Holdings / Treasury = 150,000,000 (5%)',
+    id: 3,
+  },
+  {
+    quantity: 4,
+    percentage: 30,
+    name: 'Long-Term Compensation = 150,000,000 (5%)',
+    id: 4,
+  },
+]
+
+it('is visible', () => {
+  mount(<DoughnutChart data={data} internalRadius={20} externalRadius={100} />)
+  cy.get('div').should('be.visible')
+})

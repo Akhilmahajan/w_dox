@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.separator {
+  font-size: x-large;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.wrapper > span {
+  font-size: 70px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

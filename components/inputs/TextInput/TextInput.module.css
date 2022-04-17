@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+}
+
+.input {
+  border: 2px solid #808080;
+  border-radius: 20px;
+  outline: none;
+  padding: 10px 20px;
+  background: none;
+  width: 100px;
+  height: fit-content;
+  font-size: large;
+  color: black;
+}
+
+.input:focus-within {
+  outline: rgb(63, 172, 255) solid 1px;
+}
+
+.label {
+  color: black;
+  position: absolute;
+  padding: 0 5px;
+  top: -23px;
+  font-size: 1rem;
+  left: 15%;
+  cursor: text;
+  background-color: white;
+}

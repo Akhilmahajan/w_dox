@@ -1,0 +1,52 @@
+.navLink {
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  transition: 0.5s;
+  width: fit-content;
+
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+
+  /* identical to box height */
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+
+.navLink:hover {
+  background: -webkit-linear-gradient(#eee, #333);
+  background: linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* .activeLink {
+  font-size: 20px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 5s ease infinite;
+} */
+
+.activeLink {
+  font-weight: bold;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

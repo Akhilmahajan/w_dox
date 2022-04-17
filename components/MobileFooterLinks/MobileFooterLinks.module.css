@@ -1,0 +1,40 @@
+@media screen and (min-width: 481px) {
+  .main {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    display: block;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .link {
+    text-decoration: none;
+  }
+
+  .button {
+    background: transparent;
+    border: none;
+    padding: 20px 0;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  .head {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    color: white;
+    align-items: center;
+    border-bottom: 1px solid white;
+  }
+
+  .linksContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}

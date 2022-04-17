@@ -1,0 +1,152 @@
+@media screen and (min-width: 481px) {
+  .process {
+    padding: 40px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .sideNote {
+    text-orientation: sideways-right;
+    writing-mode: vertical-lr;
+    width: fit-content;
+    border-right: 2px solid #5f4bd4;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .text p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 70px;
+
+    /* or 140% */
+    letter-spacing: -0.03em;
+
+    color: #ffffff;
+  }
+
+  .img {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .process {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .text p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .sideNote {
+    display: none;
+  }
+
+  .sideNote {
+    display: none;
+  }
+
+  .text p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 38px;
+
+    /* or 150% */
+    letter-spacing: -0.03em;
+
+    color: #ffffff;
+  }
+
+  .process {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .process p:nth-child(1) {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .int {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20%;
+  }
+
+  .icon {
+    color: #5f4bd4;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}

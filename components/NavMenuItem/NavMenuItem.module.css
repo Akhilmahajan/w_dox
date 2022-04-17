@@ -1,0 +1,24 @@
+.menuItem {
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 25px;
+  width: 100%;
+  text-decoration: none;
+  font-size: 1em;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+  border-bottom: 1px solid white;
+}
+
+.menuItem:nth-child(1) {
+  border-top: 1px solid white;
+}
+
+.menuItem:hover {
+  transform: scale(1.09);
+}
+
+.activeLink {
+}

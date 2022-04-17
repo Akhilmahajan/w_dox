@@ -1,0 +1,20 @@
+.main {
+  width: 100%;
+}
+
+.stepper {
+  width: 100%;
+}
+
+.text {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 34px;
+
+  /* or 162% */
+  text-align: justify;
+
+  color: #ffffff;
+}

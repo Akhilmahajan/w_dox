@@ -1,0 +1,181 @@
+.main {
+  font-family: 'Inter', sans-serif;
+}
+
+@media screen and (min-width: 481px) {
+  .main {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .card h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 75px;
+    line-height: 80px;
+
+    /* identical to box height, or 107% */
+    letter-spacing: -0.03em;
+
+    color: #ffffff;
+  }
+
+  .card span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 80px;
+
+    /* identical to box height, or 364% */
+    letter-spacing: -0.03em;
+
+    color: #ffffff;
+  }
+
+  .card p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 34px;
+
+    /* or 212% */
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+  }
+
+  .sideNote {
+    text-orientation: sideways-right;
+    writing-mode: vertical-lr;
+    width: fit-content;
+    border-right: 2px solid #5f4bd4;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text p {
+    font-size: 27px;
+  }
+
+  .img {
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    margin-top: 40px;
+  }
+
+  .card span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 158.02%;
+
+    /* or 28px */
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    color: #ffffff;
+  }
+
+  .card p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 34px;
+
+    /* or 212% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+  }
+
+  .title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 38px;
+
+    /* or 150% */
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    color: #ffffff;
+  }
+
+  .sideNote {
+    display: none;
+  }
+
+  .int {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20%;
+  }
+
+  .icon {
+    color: #5f4bd4;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}

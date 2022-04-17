@@ -1,0 +1,65 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 5px;
+  align-items: center;
+  max-width: 80%;
+  flex-grow: 1;
+}
+
+.menu {
+  width: 100%;
+  top: 0;
+  height: 88px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+
+  background: linear-gradient(
+    90.49deg,
+    #050524 -35.21%,
+    rgba(0, 0, 0, 0.67) 111.4%
+  );
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .menu {
+    z-index: -1 !important;
+    top: -1000px;
+    /* position: relative; Adds a weird padding to index page top */
+    display: none;
+  }
+}
+
+.menuItem {
+  color: white;
+  cursor: pointer;
+  /* transition: 0.5s; */
+  flex-grow: 1;
+}
+
+.menuItem:active {
+  background-color: white;
+  color: #101420;
+}
+
+.menuItem.current {
+  background-color: white;
+  color: #101420;
+}
+
+.avatar {
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo {
+  width: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+}

@@ -1,0 +1,143 @@
+@media screen and (min-width: 563px) {
+  .navButton {
+    display: none;
+  }
+
+  .navItems {
+    display: none;
+  }
+
+  .menuToggle {
+    display: none;
+  }
+}
+
+.navMenu {
+  position: fixed;
+  z-index: -1;
+  display: flex;
+  top: -1000px;
+  left: 0px;
+  padding: 0%;
+  width: fit-content;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  font-weight: 100;
+  transition: transform 0.5s;
+  /* border: 10px solid black; */
+}
+
+@media (max-width: 768px) {
+  .navMenu {
+    z-index: 4 !important;
+    top: -60px !important;
+  }
+
+  .navButton {
+    z-index: 4 !important;
+    top: 10px !important;
+  }
+}
+
+.navButton {
+  z-index: -1;
+  position: fixed;
+  top: -1000px;
+  left: 10px;
+  padding: 0%;
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  border-radius: 50%;
+  transition-timing-function: ease-in-out;
+}
+
+.navButton:hover {
+  transition: transform 0.5s;
+  transform: scale(1.1);
+}
+
+.menuIcon {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+.menuToggle {
+  cursor: pointer;
+  padding: 0%;
+  margin: 0%;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.menuBack {
+  cursor: pointer;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.menuToggle span {
+  width: 30px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.338);
+  transition: 0.5s;
+}
+
+.menuToggle span:nth-child(1) {
+  top: 0px;
+}
+
+.menuToggle span:nth-child(2) {
+  top: -10px;
+}
+
+/* .menuToggle:hover span:nth-child(2) {
+  transition: 0.5s;
+  transform: translateX(5px);
+} */
+
+.menuToggle span:nth-child(3) {
+  top: -20px;
+}
+
+.menuItems {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  padding-bottom: 20px;
+  background: #30255b;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.1em;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 100px 30px;
+  z-index: 2;
+}
+
+@media screen and (min-width: 769px) {
+  .menuItems {
+    visibility: collapse;
+  }
+}

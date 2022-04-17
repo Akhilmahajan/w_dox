@@ -1,0 +1,55 @@
+.card {
+  color: white;
+  height: fit-content;
+  border-radius: 10px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2bd071;
+  box-shadow: 0 0 0px 1px #2bd071, /* inner */ 0 0 20px 1px #2bd070c5,
+    /* middle */ 0 0 60px 2px #2bd070a3; /* outer */
+  margin: 6px;
+}
+
+.button {
+  color: white;
+  background: transparent;
+  border: none;
+}
+
+.card .header {
+  overflow: hidden;
+  background: #272728;
+  height: fit-content;
+  padding: 10px;
+}
+
+.card .body {
+  background: #5453d3;
+  height: fit-content;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bodyHead {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bodyDetails {
+  padding: 10px;
+  font-size: small;
+}

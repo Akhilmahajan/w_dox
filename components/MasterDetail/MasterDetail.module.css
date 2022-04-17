@@ -1,0 +1,33 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: auto;
+}
+
+.masters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.masterWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.master {
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.detail {
+}
+
+.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 3px;
+  border-bottom: 2px solid #f9dd94; /*#7C1DC9*/
+}

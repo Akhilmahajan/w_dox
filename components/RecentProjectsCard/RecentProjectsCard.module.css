@@ -1,0 +1,245 @@
+@media screen and (min-width: 769px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgba(0, 0, 0, 0.355);
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.422);
+    overflow: hidden;
+    height: 130px;
+    font-size: small;
+  }
+
+  .container {
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .health {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+  }
+
+  .heartIcon {
+    width: 20px;
+    margin: 0 5px;
+    color: red;
+  }
+
+  .title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.04em;
+
+    color: #ffffff;
+    grid-column: 1/4;
+  }
+
+  .details {
+    align-items: center;
+    text-align: center;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    /* identical to box height */
+
+    color: #ffffff;
+
+    grid-column: 1 / 4;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  /* .smImg {
+    display: none;
+  } */
+
+  .button {
+    grid-column: 1 / 4;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img {
+    grid-column: 1;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .main {
+    display: grid;
+    min-width: max-content;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgba(0, 0, 0, 0.355);
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.422);
+    overflow: hidden;
+    height: 180px;
+  }
+
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  .health {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .heartIcon {
+    width: 20px;
+    color: red;
+  }
+
+  .title {
+    text-align: center;
+    grid-column: 1/4;
+  }
+
+  .details {
+    grid-column: 1 / 4;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+
+    /* identical to box height */
+
+    color: #ffffff;
+  }
+
+  /* .smImg {
+    display: none;
+  } */
+
+  .button {
+    grid-column: 1 / 4;
+  }
+
+  .img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: auto;
+    width: auto;
+  }
+}
+
+.shieldContainer {
+  width: 20px;
+  color: green;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.422);
+    margin: 0 10px 10px 0;
+    padding: 0 10px;
+    min-width: 200px;
+    width: 200px;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.416);
+    border-radius: 3px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    gap: 5px;
+  }
+
+  .heartIcon {
+    width: 20px;
+    color: red;
+    margin: 0 5px;
+  }
+
+  .health {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .container {
+    background-color: rgba(0, 0, 0, 0.085);
+    width: 100%;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .smImg {
+    width: auto;
+    height: auto;
+  } */
+
+  .title {
+    font-size: small;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .details {
+    display: flex;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    /* identical to box height */
+
+    color: #ffffff;
+    gap: 5px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

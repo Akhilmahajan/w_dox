@@ -1,0 +1,25 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 315.5%;
+
+  /* or 50px */
+
+  color: #ffffff;
+}
+
+.icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    display: none;
+  }
+}

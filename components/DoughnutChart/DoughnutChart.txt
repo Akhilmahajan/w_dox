@@ -1,0 +1,47 @@
+import React from 'react'
+import { Donut, Legend } from 'britecharts-react'
+import styles from './DoughnutChart.module.css'
+
+export interface IDoughnutData {
+  id: number
+  percentage: number
+  name: string
+  quantity: number
+}
+
+interface IProps {
+  data: Array<IDoughnutData>
+  internalRadius: number
+  externalRadius: number
+}
+
+export default function DoughnutChart({
+  data,
+  internalRadius,
+  externalRadius,
+}: IProps) {
+  return (
+    <div className={styles.main}>
+      <div className={styles.doughnut}>
+        <Donut
+          data={data}
+          externalRadius={externalRadius}
+          internalRadius={internalRadius}
+        />
+      </div>
+      <div className={styles.legend}>
+        <Legend
+          data={data}
+          markerSize={15}
+          margin={{
+            top: 5,
+            right: 5,
+            bottom: 5,
+            left: 5,
+          }}
+          height={120}
+        />
+      </div>
+    </div>
+  )
+}

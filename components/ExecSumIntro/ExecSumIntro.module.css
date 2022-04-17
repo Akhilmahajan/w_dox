@@ -1,0 +1,275 @@
+.main {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    color: white;
+    display: grid;
+    gap: 20px;
+    padding: 0 25px;
+    grid-template-columns: 1fr 4fr;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 4fr 2fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .nav {
+    grid-row: 1 / 4;
+    padding-left: 20px;
+  }
+
+  .cardBody {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .token {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .staking {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .dao {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .verification {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .nft {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .dex {
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .img {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    position: relative;
+    left: -35px;
+    top: -40px;
+    transform: scale(1.3);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon {
+    grid-row: 1 / 3;
+    width: 50px;
+  }
+
+  .tokenIcon {
+    grid-row: 1 / 3;
+    width: 30px;
+  }
+
+  .details {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    /* or 18px */
+
+    color: #ffffff;
+  }
+
+  .title {
+    padding: 10px 0;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+
+    /* or 22px */
+
+    color: #ffffff;
+  }
+
+  .heading {
+    grid-row: 1;
+    grid-column: 2/5;
+    padding: 10px 0;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+
+    color: #ffffff;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 769px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 40px 20px;
+    border-bottom: 1px solid white;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .icon {
+    grid-row: 1 / 3;
+    width: 30px;
+  }
+
+  .tokenIcon {
+    grid-row: 1 / 3;
+    width: 20px;
+  }
+
+  .title {
+    padding: 10px 0;
+    padding: 10px 0;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+
+    /* or 22px */
+
+    color: #ffffff;
+  }
+
+  .details {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    /* or 18px */
+
+    color: #ffffff;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin: 20px auto;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .heading {
+    padding: 10px 0;
+    padding: 10px 0;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 41px;
+
+    /* identical to box height */
+
+    color: #ffffff;
+  }
+
+  .img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 40px 20px;
+    border-bottom: 1px solid white;
+  }
+
+  .details {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    /* or 18px */
+
+    color: #ffffff;
+  }
+
+  .icon {
+    grid-row: 1 / 3;
+    width: 30px;
+  }
+
+  .tokenIcon {
+    grid-row: 1 / 3;
+    width: 20px;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin: 20px auto;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .title {
+    padding: 10px 0;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+
+    /* or 22px */
+
+    color: #ffffff;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .heading {
+    padding: 10px 0;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 41px;
+
+    /* identical to box height */
+
+    color: #ffffff;
+  }
+}

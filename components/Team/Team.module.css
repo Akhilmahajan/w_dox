@@ -1,0 +1,187 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: auto;
+  gap: 40px;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sideNote {
+  text-orientation: sideways-right;
+  writing-mode: vertical-lr;
+  width: fit-content;
+  border-right: 2px solid #5f4bd4;
+}
+
+.heading {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 80px;
+
+  /* or 145% */
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  color: #ffffff;
+}
+
+.text {
+  text-align: left;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 48px;
+
+  /* or 216% */
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
+
+.name {
+}
+
+.position {
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.teamCard {
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #070712;
+  border-radius: 20px;
+  padding-bottom: 10px;
+  margin: 20px;
+  transition: 0.5s;
+}
+
+.teamCard:hover {
+  transform: scale(1.1);
+}
+
+.img {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 760px) {
+  .main {
+    justify-content: center;
+  }
+
+  .teamCard {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+
+    /* or 184% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+  }
+
+  .sideNote {
+    display: none;
+  }
+
+  .cards {
+    width: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .teamCard {
+    width: 100%;
+    margin: auto;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .heading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 80px;
+
+    /* or 320% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    color: #ffffff;
+  }
+
+  /* .name {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 72px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    color: #ffffff;
+  }
+
+  .position {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+
+    text-align: center;
+
+    color: #848484;
+  } */
+}

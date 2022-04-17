@@ -1,0 +1,150 @@
+.flickerGuard {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* background: #19191b; */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: linear-gradient(-45deg, #063048, #19191b, #100751, #0b3848);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  /* height: 100vh; */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  color: white;
+  background: linear-gradient(-45deg, #063048, #100751, #19191b, #0b3848);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow-x: hidden;
+  /* font-family: 'Inter', sans-serif; */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.button {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.buttons div {
+  width: 100%;
+}
+
+.text {
+  width: 90%;
+  margin: auto;
+}
+
+.textBody p {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 34px;
+
+  /* or 162% */
+  text-align: justify;
+
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 769px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.textHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textTitle {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 83px;
+
+  /* or 184% */
+  letter-spacing: -0.03em;
+
+  color: #ffffff;
+}
+
+.textImg {
+  width: 200px;
+  margin-right: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    padding-top: 40px;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .textHeading {
+    padding: 20px;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+  }
+  .textTitle {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 29px;
+
+    /* or 153% */
+
+    color: #ffffff;
+  }
+
+  .textImg {
+    width: 100px;
+  }
+
+  .textBody {
+    padding: 0 20px;
+  }
+
+  .textBody p {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+
+    /* or 165% */
+    text-align: justify;
+
+    color: #ffffff;
+  }
+}
