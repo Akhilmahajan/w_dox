@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react'
-import { Grid, Paper, FormControl, InputLabel, Select, MenuItem, Button, Box, TextField, InputAdornment, ThemeProvider, createMuiTheme, createTheme } from '@mui/material';
+import { Grid, Paper, FormControl, Button, Box, TextField, InputAdornment, ThemeProvider, createTheme } from '@mui/material';
 import Footer from '../../components/Footer/Footer'
 import Navs from '../../components/Navs/Navs'
 import styles from '../doodles/Doodles.module.css'
@@ -8,9 +8,8 @@ import StepConnector, { stepConnectorClasses } from '@mui/material/StepConnector
 import { styled } from '@mui/material/styles';
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
-import { StepButton, StepLabel, Typography } from '@mui/material';
+import { StepButton, Typography } from '@mui/material';
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import ModeStandbyIcon from "@mui/icons-material/ModeStandby";
 import AdjustOutlinedIcon from '@mui/icons-material/AdjustOutlined';
 import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 import pageStyles from './verification.module.css'
@@ -21,8 +20,6 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import DriveFileMoveIcon from '@mui/icons-material/DriveFileMove';
 import LanguageIcon from '@mui/icons-material/Language';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import MarkEmailUnreadOutlinedIcon from '@mui/icons-material/MarkEmailUnreadOutlined';
-import VolumeUpOutlinedIcon from '@mui/icons-material/VolumeUpOutlined';
 declare module '@mui/material/Button' {
   interface ButtonPropsVariantOverrides {
     dashed: true;
@@ -150,34 +147,7 @@ export default function Doodles() {
               }
             }} className={pageStyles.continer}>
 
-              <S8></S8>
-            </Paper>
-            <Paper sx={{
-              textAlign: 'left',
-              padding: "40px",
-              marginTop: "4%",
-              background: 'hsl(0deg 0% 0% / 25%)',
-              color: 'white',
-              '@media(minWidth: 480px)': {
-                background: 'hsl(0deg 0% 0% / 100%)',
-              }
-            }} className={pageStyles.continer}>
-
               <S1></S1>
-            </Paper>
-            <Paper sx={{
-              textAlign: 'left',
-              padding: "40px",
-              marginTop: "4%",
-              background: 'hsl(0deg 0% 0% / 25%)',
-              color: 'white',
-              '@media(minWidth: 480px)': {
-                background: 'hsl(0deg 0% 0% / 100%)',
-              }
-            }} className={pageStyles.continer}>
-
-
-              <S2></S2>
             </Paper>
           </Grid>
         </Grid>
@@ -187,62 +157,7 @@ export default function Doodles() {
   )
 }
 
-function S8() {
-  return (
-    <>
-      <h3>Community Update Information</h3>
-      <p>* We need developers to submit updates to our project to more accurately represent your “Health” rating. Upon submission, the updates will be verified and reflected within your project’s “Health” rating immediately.</p>
 
-      <b>How often will the project update its Roadmap ?</b>
-      <FormControl fullWidth>
-        <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          displayEmpty
-          inputProps={{ 'aria-label': 'Without label' }}
-          sx={{
-            background: 'rgba(255, 255, 255, 0.1)',
-            color: 'rgba(255, 255, 255, 0.5)',
-            marginTop: '21px',
-          }}
-        >
-          <MenuItem selected>
-            <span>Quarterly</span>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
-      </FormControl>
-      <p>* We need the developers to disclose the marketing they’ve paid for. This is especially true if the project is paying for promotion on social media - Twitter, TikTok, YouTube, Instagram, Weibo, etc. The amount spent, to whom it was given, and on what metrics. We do this to protect the community from serial scammers. </p>
-      <b>How often will the project update its Marketing/Advertising?</b>
-      <FormControl fullWidth>
-        <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          displayEmpty
-          inputProps={{ 'aria-label': 'Without label' }}
-          sx={{
-            background: 'rgba(255, 255, 255, 0.1)',
-            color: 'rgba(255, 255, 255, 0.5)',
-            marginTop: '21px'
-          }}
-        >
-          <MenuItem selected>
-            <span>Quarterly</span>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
-      </FormControl>
-      <Box sx={{ display: 'flex', justifyContent: "space-between", marginTop: "7%", marginX: "2%" }}>
-        <Button variant="contained" size="large" sx={{ paddingX: '7%', fontFamily: "Nunito Sans", fontStyle: 'normal' }}  >Back</Button>
-        <Button variant="contained" size="large" sx={{ paddingX: '7%' }}>Next</Button>
-      </Box>
-    </>
-  )
-}
 
 
 
@@ -396,140 +311,6 @@ function S1() {
         </Grid>
         <Grid item xs={12} sm={12} >
           <Button variant="contained" size="large" sx={{ paddingX: '7%' }}>Next</Button>
-        </Grid>
-      </Grid>
-    </Box >
-  );
-}
-function S2() {
-  return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={3}>
-        <Grid item xs={12} sm={12}>
-          <h3>Core Development Team</h3>
-        </Grid>
-        <Grid item xs={12} sm={12} columns={{ xs: 4, md: 12 }} >
-          <Box className={pageStyles.team} >
-            <h4>Developer 1</h4>
-            <div>
-              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="5.5" cy="5" r="5" fill="#4F46E5" />
-              </svg>
-              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="5.5" cy="5" r="5" fill="white" />
-              </svg>
-              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="5.5" cy="5" r="5" fill="white" />
-              </svg>
-              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="5.5" cy="5" r="5" fill="white" />
-              </svg>
-            </div>
-
-            <span>
-              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.5 5C10.5 5.26522 10.3946 5.51957 10.2071 5.70711C10.0196 5.89464 9.76522 6 9.5 6H6.5V9C6.5 9.26522 6.39464 9.51957 6.20711 9.70711C6.01957 9.89464 5.76522 10 5.5 10C5.23478 10 4.98043 9.89464 4.79289 9.70711C4.60536 9.51957 4.5 9.26522 4.5 9V6H1.5C1.23478 6 0.98043 5.89464 0.792894 5.70711C0.605357 5.51957 0.5 5.26522 0.5 5C0.5 4.73478 0.605357 4.48043 0.792894 4.29289C0.98043 4.10536 1.23478 4 1.5 4H4.5V1C4.5 0.734783 4.60536 0.48043 4.79289 0.292893C4.98043 0.105357 5.23478 0 5.5 0C5.76522 0 6.01957 0.105357 6.20711 0.292893C6.39464 0.48043 6.5 0.734783 6.5 1V4H9.5C9.76522 4 10.0196 4.10536 10.2071 4.29289C10.3946 4.48043 10.5 4.73478 10.5 5Z" fill="white" fill-opacity="0.6" />
-              </svg> Add Developer
-            </span>
-
-          </Box>
-
-          {/* <p>Add developer</p> */}
-          <Box className={pageStyles.showHide} >
-            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="5.5" cy="5" r="5" fill="#4F46E5" />
-            </svg>
-            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="5.5" cy="5" r="5" fill="white" />
-            </svg>
-            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="5.5" cy="5" r="5" fill="white" />
-            </svg>
-            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="5.5" cy="5" r="5" fill="white" />
-            </svg>
-          </Box>
-        </Grid>
-        <Grid item xs={12} sm={12}>
-
-          <h4>Developer Name</h4>
-          <FormControl fullWidth>
-            <IconTextField
-              sx={{
-                background: 'rgba(255, 255, 255, 0.1)',
-                color: 'rgba(255, 255, 255, 0.5)',
-                marginTop: '21px'
-              }}
-              iconEnd={<PersonIcon sx={{ color: "#A0A3BD", fontSize: 20 }} />}
-            />
-          </FormControl>
-        </Grid>
-        <Grid item xs={12} sm={12}>
-
-          <h4>Identity Document</h4>
-        </Grid>
-        <Grid item xs={12} sm={6}>
-
-          <FormControl fullWidth>
-            <IconTextField
-              sx={{
-                background: 'rgba(255, 255, 255, 0.1)',
-                color: 'rgba(255, 255, 255, 0.5)',
-                marginTop: '21px'
-              }}
-              iconEnd={<PersonIcon sx={{ color: "#A0A3BD", fontSize: 20 }} />}
-            />
-          </FormControl>
-        </Grid>
-
-
-        <Grid item xs={6} sm={3} >
-          <FormControl fullWidth >
-            <br />
-            <DashedButton></DashedButton>
-          </FormControl>
-        </Grid>
-        <Grid item xs={6} sm={3} >
-          <FormControl fullWidth >
-            <br />
-            <DashedButton></DashedButton>
-          </FormControl>
-        </Grid>
-        <Grid item xs={12} sm={12} >
-          <FormControl fullWidth >
-            <h4>Email Address</h4>
-            <IconTextField
-              sx={{
-                background: 'rgba(255, 255, 255, 0.1)',
-                color: 'rgba(255, 255, 255, 0.5)',
-                marginTop: '21px'
-              }}
-              iconEnd={<MarkEmailUnreadOutlinedIcon sx={{ color: "#A0A3BD", fontSize: 20 }} />}
-            />
-          </FormControl>
-        </Grid>
-        <Grid item xs={12} sm={12} >
-          <FormControl fullWidth >
-            <h4>Social Media</h4>
-            <IconTextField
-              sx={{
-                background: 'rgba(255, 255, 255, 0.1)',
-                color: 'rgba(255, 255, 255, 0.5)',
-                marginTop: '21px'
-              }}
-              iconEnd={<VolumeUpOutlinedIcon sx={{ color: "#A0A3BD", fontSize: 20 }} />}
-            />
-          </FormControl>
-        </Grid>
-        <Grid item xs={12} sm={12} columns={{ xs: 4, md: 12 }}  >
-          <PersonIcon sx={{ color: "#A0A3BD", fontSize: 20 }} />
-          <span className={pageStyles.span}>Add Line</span >
-        </Grid>
-        <Grid item xs={12} sm={12} >
-          <Box sx={{ display: 'flex', justifyContent: "space-between", marginX: "2%" }}>
-            <Button variant="contained" size="large" sx={{ paddingX: '7%', fontFamily: "Nunito Sans", fontStyle: 'normal' }}  >Back</Button>
-            <Button variant="contained" size="large" sx={{ paddingX: '7%' }}>Next</Button>
-          </Box>
         </Grid>
       </Grid>
     </Box >
